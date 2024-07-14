@@ -2,3 +2,10 @@
   margin-top: 45px;
   border-color: #545454;
 }
+
+@media screen and (width: 320px) {
+  .header {
+    margin: 28px 167px 0 27px;
+    width: 100vw;
+  }
+}
