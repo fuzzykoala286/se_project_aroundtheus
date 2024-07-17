@@ -9,8 +9,6 @@
 
 .footer {
   flex-shrink: 0;
-
-  padding: 20px;
 }
 
 @media screen and (max-width: 321px) {
@@ -19,5 +17,10 @@
     line-height: 16.94px;
     margin-top: 48px;
     font-weight: 400;
+    padding: 0;
+  }
+
+  .footer {
+    padding: 0;
   }
 }
