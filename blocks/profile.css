@@ -14,7 +14,7 @@
   justify-content: start;
 }
 .profile__edit-button {
-  background: transparent url(../images/Edit\ Button.svg) center no-repeat;
+  background: transparent url(../images/editbutton.svg) center no-repeat;
   height: 24px;
   width: 24px;
   grid-area: button;
@@ -31,7 +31,7 @@
   opacity: 60%;
 }
 .profile__add-button {
-  background: transparent url(../images/plus\ icon.png) no-repeat center;
+  background: transparent url(../images/plus.svg) no-repeat center;
   width: 218px;
   height: 50px;
   margin-left: auto;
@@ -95,7 +95,6 @@
     margin: 0;
     max-width: 100%;
     padding: 0;
-    border: 2px solid #ffffff;
   }
 
   .profile__title {
@@ -125,8 +124,6 @@
 
   .profile__add-button {
     width: 282px;
-    border: 2px solid #ffffff;
-
     box-shadow: none;
     outline: none;
   }
