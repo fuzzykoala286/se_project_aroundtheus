@@ -17,6 +17,8 @@
     margin-top: 48px;
     font-weight: 400;
     padding: 0;
+    max-width: 880px;
+    width: 100%;
   }
 
   .footer {
