@@ -51,19 +51,15 @@
   cursor: pointer;
 }
 
-.modal__title {
-  border: 1px solid #000000;
+.modal__Input {
+  border: 1px solid lightgrey;
   border-top: none;
   border-left: none;
   border-right: none;
   margin-bottom: 29.74px;
 }
 
-.modal__description {
-  border: 1px solid #000000;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+.modal__Input:last-of-type {
   margin-bottom: 48px;
 }
 
@@ -98,6 +94,7 @@
     max-width: 238px;
     margin-top: 24px;
     margin-bottom: 75px;
+    font-size: 18px;
   }
 
   .modal__form {
@@ -119,5 +116,6 @@
 
   .modal__button {
     padding: 21.8px;
+    font-size: 14px;
   }
 }
