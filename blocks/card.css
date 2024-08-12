@@ -31,6 +31,10 @@
   cursor: pointer;
 }
 
+.card__like-button-active {
+  background-image: url(../images/Union.svg);
+}
+
 .card__like-button:hover {
   opacity: 50%;
 }

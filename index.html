@@ -66,6 +66,29 @@
         </form>
       </div>
     </div>
+    <div class="modal" id="profile-Add-Modal">
+      <div class="modal__container">
+        <button class="modal__close" id="profile-edit-exit-button"></button>
+        <p class="modal__heading">New Place</p>
+        <form class="modal__form" id="add-card-form">
+          <input
+            class="modal__Input modal__input_type_title"
+            id="profile-title-input"
+            type="text"
+            name="Title"
+            placeholder="title"
+          />
+          <input
+            class="modal__Input modal__input_type_url"
+            id="profile-description-input"
+            type="text"
+            name="Url"
+            placeholder="Image URL"
+          />
+          <button class="modal__button">Save</button>
+        </form>
+      </div>
+    </div>
 
     <template id="card-template"
       ><li class="card">
