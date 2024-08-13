@@ -83,6 +83,41 @@
   justify-content: center;
 }
 
+.modal__image {
+  width: 433px;
+  position: relative;
+  height: 540px;
+  max-width: 75vw;
+  margin: 0 0 0 0;
+}
+
+.modal__picture__container {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  border-radius: 10px;
+
+  transition: opacity 5s ease-out;
+  opacity: 1;
+  position: relative;
+  width: 430px;
+  height: 330px;
+}
+.modal__button:hover {
+  opacity: 0.8;
+}
+
+.modal__picture__container: :checked {
+  opacity: 1;
+  display: block;
+}
+.modal__title {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
 @media screen and (max-width: 621px) {
   .modal__container {
     max-width: 282px;
@@ -117,5 +152,14 @@
   .modal__button {
     padding: 21.8px;
     font-size: 14px;
+  }
+  .modal__image {
+    height: 299px;
+    width: 240px;
+  }
+  .modal__picture__container {
+    height: 299px;
+    width: 240px;
+    margin-top: 136px;
   }
 }

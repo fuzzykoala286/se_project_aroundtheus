@@ -85,16 +85,33 @@
             name="Url"
             placeholder="Image URL"
           />
-          <button class="modal__button">Save</button>
+          <button class="modal__button">Create</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal" id="picture-Modal">
+      <divs class="modal__picture__container">
+        <button class="modal__close" id="exit-modal-button"></button>
+        <img src="" alt="" class="modal__image" />
+        <p class="modal__title"></p>
+        
         </form>
       </div>
     </div>
 
     <template id="card-template"
       ><li class="card">
+        <button
+          type="button"
+          class="card__delete-button"
+          id="Delete-card"
+        ></button>
         <img class="card__image" src=" " alt />
+
         <div class="card__description">
           <h2 class="card__title"></h2>
+
           <button type="button" class="card__like-button"></button>
         </div></li
     ></template>

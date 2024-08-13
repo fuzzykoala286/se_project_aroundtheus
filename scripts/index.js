@@ -67,6 +67,15 @@ function handleProfileEditSubmit(e) {
   profileDescription.textContent = profileDescriptionInput.value;
   closePopup();
 }
+const previewPictureModal = document.querySelector("#picture-Modal");
+const previewImage = previewPictureModal.querySelector(".modal__image");
+const previewTitle = previewPictureModal.querySelector(".modal__title");
+function openPictureModal() {
+  previewImage.src = cardImageEl.link;
+  previewImage.alt = cardData.name;
+  previewTitle.textContent = cardData.name;
+  return;
+}
 
 function handleProfileAddSubmit(e) {
   e.preventDefault();
@@ -80,12 +89,29 @@ function handleProfileAddSubmit(e) {
   cardListEl.prepend(cardElement);
   closeEditPopup();
 }
-
+const modalExitButton = document.querySelector("#exit-modal-button");
 function getCardElement(cardData) {
   const cardElement = cardTemplate.cloneNode(true);
   const cardTitleEl = cardElement.querySelector(".card__title");
   const cardImageEl = cardElement.querySelector(".card__image");
+  const cardDeleteButton = cardElement.querySelector(".card__delete-button");
 
+  cardImageEl.addEventListener("click", () => {
+    previewTitle.textContent = cardData.name;
+    previewImage.src = cardData.link;
+    cardImageEl.alt = cardData.name;
+    previewPictureModal.classList.add("modal_opened");
+    modalExitButton.addEventListener("click", () => {
+      previewPictureModal.classList.remove("modal_opened");
+    });
+  });
+  //=> {
+
+  // });
+
+  cardDeleteButton.addEventListener("click", () => {
+    cardElement.remove(cardTemplate);
+  });
   cardTitleEl.textContent = cardData.name;
   cardImageEl.src = cardData.link;
   cardImageEl.alt = cardData.name;
