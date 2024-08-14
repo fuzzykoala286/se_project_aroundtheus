@@ -58,14 +58,18 @@ function closePopup(modal) {
 
 function openPopup(modal) {
   modal.classList.remove("modal_hidden");
-  modal.classList.add("modal_opened");
+  setTimeout(() => {
+    modal.classList.add("modal_opened");
+  }, 500);
 }
 function handleProfileEditSubmit(e) {
   e.preventDefault();
   profileTitle.textContent = profileTitleInput.value;
   profileDescription.textContent = profileDescriptionInput.value;
 
-  closePopup();
+  closePopup(profileEditModal);
+  profileTitleInput.value = "";
+  profileDescriptionInput.value = "";
 }
 const previewPictureModal = document.querySelector("#picture-Modal");
 const previewImage = previewPictureModal.querySelector(".modal__image");

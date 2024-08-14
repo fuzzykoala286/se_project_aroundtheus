@@ -9,6 +9,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   visibility: hidden;
   transition: visibility 0s linear 0.5s, opacity 0.5s;
+  opacity: 0;
 }
 
 .modal_opened {
@@ -16,7 +17,7 @@
   visibility: visible;
   opacity: 1;
   pointer-events: all;
-  transition: opacity 0.6s;
+  transition: opacity 0.5s linear;
 }
 
 .modal_hidden {
@@ -102,7 +103,7 @@
   margin: 0 0 0 0;
 }
 
-.modal__picture__container {
+.modal__picture-container {
   margin-right: auto;
   margin-left: auto;
   margin-top: 90px;
