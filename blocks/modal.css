@@ -7,13 +7,24 @@
   background-color: #000;
   z-index: 999;
   background-color: rgba(0, 0, 0, 0.5);
-  display: none;
+  visibility: hidden;
+  transition: visibility 0s linear 0.5s, opacity 0.5s;
 }
 
 .modal_opened {
   display: flex;
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+  transition: opacity 0.6s;
 }
 
+.modal_hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: visibility 0s linear 0.5s, opacity 0.5s;
+}
 .modal__container {
   background-color: #fff;
   margin: auto;
@@ -51,7 +62,7 @@
   cursor: pointer;
 }
 
-.modal__Input {
+.modal__input {
   border: 1px solid lightgrey;
   border-top: none;
   border-left: none;
@@ -108,7 +119,7 @@
   opacity: 0.8;
 }
 
-.modal__picture__container: :checked {
+.modal__picture__container :checked {
   opacity: 1;
   display: block;
 }
