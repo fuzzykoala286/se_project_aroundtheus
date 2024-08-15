@@ -50,16 +50,11 @@ const cardTemplate =
 
 //functions
 function closePopup(modal) {
-  setTimeout(() => {
-    modal.classList.remove("modal_opened");
-  }, 1000);
+  modal.classList.remove("modal_opened");
 }
 
 function openPopup(modal) {
-  //modal.classList.remove("modal_hidden");
-  setTimeout(() => {
-    modal.classList.add("modal_opened");
-  }, 1000);
+  modal.classList.add("modal_opened");
 }
 function handleProfileEditSubmit(e) {
   e.preventDefault();
@@ -101,22 +96,15 @@ function getCardElement(cardData) {
   const cardTitleEl = cardElement.querySelector(".card__title");
   const cardImageEl = cardElement.querySelector(".card__image");
   const cardDeleteButton = cardElement.querySelector(".card__delete-button");
-  const likeButtons = cardElement.querySelector(".card__like-button");
-  likeButtons.addEventListener("click", () => {
-    likeButtons.classList.toggle("card__like-button-active");
+  const likeButton = cardElement.querySelector(".card__like-button");
+  likeButton.addEventListener("click", () => {
+    likeButton.classList.toggle("card__like-button-active");
   });
   cardImageEl.addEventListener("click", () => {
     previewTitle.textContent = cardData.name;
     previewImage.src = cardData.link;
     previewImage.alt = cardData.name;
     openPopup(previewPictureModal);
-  });
-
-  const ExitButton = document.querySelectorAll(".modal__close");
-
-  ExitButton.forEach((button) => {
-    const popup = button.closest(".modal");
-    button.addEventListener("click", () => closePopup(popup));
   });
 
   cardDeleteButton.addEventListener("click", () => {
@@ -135,11 +123,14 @@ profileEditButton.addEventListener("click", () => {
   openPopup(profileEditModal);
 });
 
-closePopup(profileAddModal);
-profileEditForm.addEventListener("submit", handleProfileEditSubmit);
-
 addNewCardButton.addEventListener("click", () => openPopup(profileAddModal));
+profileEditForm.addEventListener("submit", handleProfileEditSubmit);
+const exitButtons = document.querySelectorAll(".modal__close");
 
+exitButtons.forEach((button) => {
+  const popup = button.closest(".modal");
+  button.addEventListener("click", () => closePopup(popup));
+});
 initialCards.forEach((cardData) => {
   const cardElement = getCardElement(cardData);
   cardListEl.append(cardElement);
