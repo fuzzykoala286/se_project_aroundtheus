@@ -12,7 +12,11 @@ This project is made to implement validation on all the input fields present and
 
 
 **Images**
+
+
 <img width="659" height="530" alt="image" src="https://github.com/user-attachments/assets/b56bc478-d937-4963-a689-283d898ce0e1" />
+<img width="1344" height="826" alt="Recording 2026-06-13 122223" src="https://github.com/user-attachments/assets/ec7dfa4f-c65c-46f1-8ce4-5cbd65b3d6f3" />
+
 
 
 
