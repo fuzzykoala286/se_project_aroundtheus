@@ -3,29 +3,24 @@
 ### Overview
 
 - Intro
-- Figma
 - Images
 - link to github
+- Summary
 
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.
+This project is made to implement validation on all the input fields present and also add a way to close any popup by clicking elsewhere or using the "Escape" key.
 
-**Figma**
 
-- [Link to the project on Figma](https://www.figma.com/file/ii4xxsJ0ghevUOcssTlHZv/Sprint-3%3A-Around-the-US?node-id=0%3A1)
 
 **Images**
 
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster.
 
-Good luck and have fun!
 
 **Github Pages Link**
 
 url(https://fuzzykoala286.github.io/se_project_aroundtheus/)
 
-**Google Drive Link**
-url(https://drive.google.com/file/d/1StYOfDiw83g6zAOkEf8R5XbTbWMTGLrg/view?usp=sharing)
 
-**My summary of my project**
 
-while using matrerial i learned through the chapter i was able to create a responsive layout while using grid , flexbox, and responsive design principles that would work differantly depending on the size of the screen. As a summary of my own project i feel i need work in the responsive design area attributed to some of the breaking in my project.
+**Summary of project**
+
+while using material I learned through the chapter I was able to enable validation by using the configuration object presented to pass recurring parameters to functions created while listening for events that would add or remove classes to achieve the the desired styles like making error messages visible or disabling the "submit" or "Save" button.Event listeners were also used to close popups when you Click" anywhere outside of the popup or use the "Escape" key.

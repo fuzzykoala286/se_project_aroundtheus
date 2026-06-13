@@ -42,7 +42,7 @@ const addCardFormElement = document.querySelector("#add-card-form");
 const profileAddModal = document.querySelector("#profile-Add-Modal");
 const addNewCardButton = document.querySelector(".profile__add-button");
 const profileEditForm = profileEditModal.querySelector(".modal__form");
-
+const modals = document.querySelectorAll(".modal");
 const cardListEl = document.querySelector(".cards__list");
 
 const cardTemplate =
@@ -117,21 +117,58 @@ function getCardElement(cardData) {
 }
 
 addCardFormElement.addEventListener("submit", handleProfileAddSubmit);
+
 profileEditButton.addEventListener("click", () => {
   profileTitleInput.value = profileTitle.textContent;
   profileDescriptionInput.value = profileDescription.textContent;
+  
   openPopup(profileEditModal);
+
 });
 
 addNewCardButton.addEventListener("click", () => openPopup(profileAddModal));
 profileEditForm.addEventListener("submit", handleProfileEditSubmit);
 const exitButtons = document.querySelectorAll(".modal__close");
 
-exitButtons.forEach((button) => {
-  const popup = button.closest(".modal");
-  button.addEventListener("click", () => closePopup(popup));
-});
+
+
+
 initialCards.forEach((cardData) => {
   const cardElement = getCardElement(cardData);
   cardListEl.append(cardElement);
 });
+
+exitButtons.forEach((button) => {
+  const popup = button.closest(".modal");
+  button.addEventListener("click", () => closePopup(popup));})
+  
+function modalEventListeners(modals){
+modals.forEach((modal) =>
+    modal.addEventListener("click", (e) => {
+      if (e.target ===modal ){closePopup(modal);}
+     }))
+
+modals.forEach((modal) =>
+    document.addEventListener("keydown", (e) =>{
+    if(e.key==="Escape"){closePopup(modal);}
+  }))
+    document.addEventListener("keydown", (e) => {
+      if(modals.classList ===".modal_opened"){closePopup(modal);}
+    })
+};
+  modalEventListeners(modals);
+    
+      
+  
+  
+
+    
+   
+   
+   
+
+  
+    
+ //modals.addEventListener("click", (e) => {
+   // if (e.target === modals) {
+    //  closePopup(modals);

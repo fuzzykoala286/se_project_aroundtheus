@@ -63,6 +63,9 @@
   border-left: none;
   border-right: none;
   margin-bottom: 29.74px;
+  width:stretch;
+  
+
 }
 
 .modal__Input:last-of-type {
@@ -169,3 +172,35 @@
     margin-top: 136px;
   }
 }
+ 
+.popup__input_type_error{
+  border-bottom:solid red 1px;
+  
+}
+ .popup__error{
+  font-size: 12px;
+  line-height: 15px;
+  opacity:0;
+  position: absolute;
+  top: calc(100% - 30px);
+  left: 0;
+  transition: opacity 0.3s;
+  
+  color: #ff0000;
+  display: flex;
+ }
+
+ .popup__error_visible{
+  opacity:1 ;
+  
+ }
+
+ .popup__button_disabled{
+
+  background-color: white;
+  color:black;
+ }
+
+ .modal__label{
+  position: relative;
+ }
