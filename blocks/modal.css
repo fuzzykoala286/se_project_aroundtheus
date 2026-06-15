@@ -173,11 +173,11 @@
   }
 }
  
-.popup__input_type_error{
+.modal__input_type_error{
   border-bottom:solid red 1px;
   
 }
- .popup__error{
+ .modal__error{
   font-size: 12px;
   line-height: 15px;
   opacity:0;
@@ -190,12 +190,12 @@
   display: flex;
  }
 
- .popup__error_visible{
+ .modal__error_visible{
   opacity:1 ;
   
  }
 
- .popup__button_disabled{
+ .modal__button_disabled{
 
   background-color: white;
   color:black;
