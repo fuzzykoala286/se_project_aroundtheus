@@ -152,4 +152,4 @@ function handleEscape(evt) {
 }
 
 setModalEventListeners(modals);
- console.log(profileAddModal);
+console.log(profileAddModal);

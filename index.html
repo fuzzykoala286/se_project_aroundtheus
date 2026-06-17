@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -47,33 +47,38 @@
       <div class="modal__container">
         <button class="modal__close" id="exit-edit-button"></button>
         <p class="modal__heading">Edit Profile</p>
-        <form class="modal__form " id="profile_edit_form">
-         <div class="modal__label"> 
-          <input
-            class="modal__input    "
-            id="profile-title-input"
-            type="text"
-            name="Title"
-            placeholder="Jacques Cousteau"
-            
-            required
-            minlength="2"
-            maxlength="40"
-          /><span class=" modal__error modal__error_visible " id="profile-title-input-error"></span>
-        </div>
-        <div class="modal__label">
-          <input
-            class="modal__input "
-            id="add-profile-description-input"
-            type="text"
-            name="Description"
-            placeholder="Explorer"
-            required
-            minlength="2"
-            maxlength="200"
-          /><span class="modal__error modal__error_visible" id="add-profile-description-input-error"></span>
+        <form class="modal__form" id="profile_edit_form">
+          <div class="modal__label">
+            <input
+              class="modal__input"
+              id="profile-title-input"
+              type="text"
+              name="Title"
+              placeholder="Jacques Cousteau"
+              required
+              minlength="2"
+              maxlength="40"
+            /><span
+              class="modal__error modal__error_visible"
+              id="profile-title-input-error"
+            ></span>
           </div>
-          <button class="modal__button  ">Save</button>
+          <div class="modal__label">
+            <input
+              class="modal__input"
+              id="add-profile-description-input"
+              type="text"
+              name="Description"
+              placeholder="Explorer"
+              required
+              minlength="2"
+              maxlength="200"
+            /><span
+              class="modal__error modal__error_visible"
+              id="add-profile-description-input-error"
+            ></span>
+          </div>
+          <button class="modal__button">Save</button>
         </form>
       </div>
     </div>
@@ -83,38 +88,42 @@
         <p class="modal__heading">New Place</p>
         <form class="modal__form" id="add-card-form">
           <div class="modal__label">
-          <input
-            class="modal__input modal__input_type-title"
-            id="profile-title-input"
-            type="text"
-            name="Title"
-            placeholder="title"
-            required
-            minlength="1"
-            maxlength="30"
-          /><span class="modal__error modal__error_visible" id="profile-title-input-error"></span>
+            <input
+              class="modal__input modal__input_type-title"
+              id="card-title-input"
+              type="text"
+              name="Title"
+              placeholder="title"
+              required
+              minlength="1"
+              maxlength="30"
+            /><span
+              class="modal__error modal__error_visible"
+              id="card-title-input-error"
+            ></span>
           </div>
           <div class="modal__label">
-          <input
-            class="modal__input modal__input_type-url"
-            id="profile-description-input"
-            type="url"
-            name="Url"
-            placeholder="Image URL"
-            required
-          /><span class="modal__error modal__error_visible" id="profile-description-input-error"></span>
+            <input
+              class="modal__input modal__input_type-url"
+              id="profile-description-input"
+              type="url"
+              name="Url"
+              placeholder="Image URL"
+              required
+            /><span
+              class="modal__error modal__error_visible"
+              id="profile-description-input-error"
+            ></span>
           </div>
-          <button class="modal__button modal__button_disabled ">Create</button>
+          <button class="modal__button modal__button_disabled">Create</button>
         </form>
       </div>
     </div>
     <div class="modal" id="picture-Modal">
-      <divs class="modal__picture-container">
+      <div class="modal__picture-container">
         <button class="modal__close" id="exit-preview-button"></button>
         <img src="" alt="" class="modal__image" />
         <p class="modal__title"></p>
-        
-        
       </div>
     </div>
 
@@ -131,10 +140,10 @@
           <h2 class="card__title"></h2>
 
           <button type="button" class="card__like-button"></button>
-        </div></li
+        </div>
+        </li
     ></template>
     <script src="./scripts/index.js"></script>
     <script src="./scripts/validation.js"></script>
   </body>
 </html>
-
